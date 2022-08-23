@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales website</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="icon" href="images.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="header">
+        <i class="fa fa-shopping-basket" style="font-size:30px;"></i>
+        <font id="text1">Sales website</font> 
+
+        <a href="#" id="home">Home</a>
+        <a href="#about2" id="about">About</a>
+        <a href="product.html" id="product">Products</a>
+        <a href="#text9" id="contact">Contact</a>
+        <a href="register.html" id="register">Register</a>
+        <a href="sign_in.html" id="sign_in">Sign in</a>
+        <a href="#text8" id="comments">Comments</a>
+         <br><br>
+    </div>
+
+    <div class="main" >
+        <hr>
+        <p id="text2">You can find everything about supplies on our sales website</p>
+        <p id="text3">Books, notebooks, pens, erasers, pencils, clothes, shoes etc.</p>
+        <p id="text4">We have everything which you are looking for</p>
+        
+        <a href="#about2"><input style=" cursor: pointer;" type="button" value="More details" class="button1"></a>
+    </div>
+    
+    <div id="main2">
+        <p id="about2">About</p>
+        <p id="text5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, magni? Possimus quia, explicabo officiis pariatur ullam, provident nisi earum quas voluptatem voluptatibus quisquam rem molestiae modi nihil hic, natus quidem.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi velit dolore, ducimus commodi atque in! Modi totam ratione corrupti accusamus!
+        </p>
+        
+    </div>
+
+    
+
+
+    <div class="comments">
+        <p id="text8">Comments</p>
+        <form action="" method="">
+           Your name:<br> <input type="text" placeholder="Please,enter your name" id="input1"  required ><br><br>
+            Your e-mail:<br><input type="email" placeholder="Enter your E-mail" id="input2"  ><br><br>
+            Your comment:<br><input type="text" placeholder="Please,enter your commments" id="input3"  required ><br><br>
+            <input type="button" onclick="getelements()" value="Send" id="input4">
+        </form>
+        
+
+    </div>
+    <script src="API.js"></script>
+
+    <script>
+    function getelements(){
+        let inputname = document.getElementById("input1").value;
+        let inputemail = document.getElementById("input1").value;
+        let inputcomment = document.getElementById("input3").value;
+
+        const store = new SteinStore(
+    "https://api.steinhq.com/v1/storages/628dea4b4906bb0537479349"
+  );
+
+  store
+    .append("comments", [
+      {
+        name: inputname,
+        email: inputemail,
+        comments: inputcomment
+      }
+    ])
+    .then(res => {
+      console.log(res);
+    });
+    }
+    </script>
+
+
+    <div class="contact">
+        <font id="text9">Contact us</font>  <font id="map">Site map</font><br><br>
+        
+        <i id="instagram" class="fa fa-instagram"></i>
+        <a href="" style="font-size:24px; color:rgb(153, 255, 187);;">Instagram</a> <br>
+
+        <i id="facebook" class="fa fa-facebook"></i>
+        <a href="" style="font-size:24px; color:rgb(153, 255, 187);;">facebook</a><br>
+
+        <i id="twitter" class="fa fa-twitter"></i>
+        <a href="" style="font-size:24px; color:rgb(153, 255, 187);;">twitter</a><br>
+        
+        <i id="linkedin" class="fa fa-linkedin"></i>
+        <a href="" style="font-size:24px; color:rgb(153, 255, 187);;">linkedin</a><br>
+
+        <i id="phone" class="fa fa-phone"></i>
+        <a href="" style="font-size:24px; color:rgb(153, 255, 187);;">Phone number</a><br>
+
+        <i id="e-mail" class="fa fa-envelope"></i>
+        <a href="" style="font-size:24px; color:rgb(153, 255, 187);;">e-mail</a><br>
+
+        <div class="map">
+            <ul>
+                <li id="map1"><a href="#" style="color:rgb(153, 255, 187);">Home</a></li>
+                <li id="map1"><a href="#about2" style="color:rgb(153, 255, 187);">About</a></li>
+                <li id="map1"><a href="#text6" style="color:rgb(153, 255, 187);">Product</a></li>
+                <li id="map1"><a href="#text9" style="color:rgb(153, 255, 187);">Contact</a></li>
+                <li id="map1"><a href="#text8" style="color:rgb(153, 255, 187);">Commnets</a></li>
+                <li id="map1"><a href="" style="color:rgb(153, 255, 187);">Register</a></li>
+                <li id="map1"><a href="" style="color:rgb(153, 255, 187);">Sign in</a></li>
+            </ul>
+        </div>
+<br><br><br><br>
+        <p id="end">© 2022 Sales website. All rights reserved. Cookie policy, Privacy and Terms.</p>
+    </div>
+</body> 
+</html>
+
+<!-- https://docs.google.com/spreadsheets/d/180orkXfTufLdJWYGXslK29RtWw7NFwtCFrQ2tTFuaX0/edit#gid=0 -->

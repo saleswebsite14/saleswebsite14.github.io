@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="register.css" rel="stylesheet">
+</head>
+<body>
+    
+        <p id="sekil1">
+    <img src="download.png">
+    </p>
+    <p >
+        <form id="form">
+            <i id="msg1"></i><br>
+            <input id="name" placeholder="Name:" type="text"><br>
+            <i id="msg2"></i><br>
+            <input id="surname" placeholder="Surname:" type="text"><br><br>
+            <input  placeholder="birth" type="date"><br><br>
+            <i id="msg3"></i><br>
+            <select>
+                <option>077</option>
+                <option>070</option>
+                <option>050</option>
+                <option>051</option>
+            </select>
+            <input id="number" placeholder="Number" type="number"><br>
+            <i id="msg4"></i><br>
+            <input id="mail" placeholder="email" type="email"><br>
+            <i id="msg5"></i><br>
+            <input id="pass" placeholder="password" type="text"><br><br><br>
+
+
+             <input onclick="date()" id="button" value="Register" type="button">
+
+            
+        </p>
+
+        
+
+        </form>
+
+
+            
+
+            
+            
+    <p class="back">
+        <a id="home"  href="home.html">
+            Home
+        </a>
+        <a id="about" href="home.html
+           About
+        </a>
+        <a id="Products" href="product.html">
+             Products
+        </a>
+        <a id="contact" href="home.html">
+            Contact
+
+        </a>
+    </p>
+
+<img src="3.jpg" width="100%" height="100%">
+
+<script src="API.js"></script>
+<script>
+    function date(){
+        let name = document.getElementById("name").value;
+        let surname = document.getElementById("surname").value;
+        let number = document.getElementById("number").value;
+        let email = document.getElementById("mail").value;
+        let pass = document.getElementById("pass").value;
+
+        if(name == ""){
+            // alert("Please,write everybox");
+            document.getElementById("msg1").innerHTML = "Please,write everybox!";
+        }
+        if(surname == ""){
+            document.getElementById("msg2").innerHTML = "Please,write everybox!";
+        }
+        if(number == ""){
+            document.getElementById("msg3").innerHTML = "Please,write everybox!";
+        }
+        if(email == "" ){
+            document.getElementById("msg4").innerHTML = "Please,write everybox!";
+        }
+        if(pass == ""){
+            document.getElementById("msg5").innerHTML = "Please,write everybox!";
+        }
+
+        else{
+            const store = new SteinStore(
+    "https://api.steinhq.com/v1/storages/628dea4b4906bb0537479349"
+  );
+
+  store
+    .append("register", [
+      {
+        name: name,
+        surname: surname,
+        number: number,
+        email: email,
+        password: pass
+      }
+    ])
+    .then(res => {
+      console.log(res);
+    });
+
+
+        alert("You succesfuly registered!");
+    window.open("sign_in.html","_self");
+    }
+    
+        }
+
+</script>
+
+</body> 
+</html>
+<!-- https://docs.google.com/spreadsheets/d/180orkXfTufLdJWYGXslK29RtWw7NFwtCFrQ2tTFuaX0/edit#gid=392003194 -->

@@ -1,0 +1,199 @@
+
+body{
+    font-size:40px;
+}
+
+a{
+    text-decoration: none;
+    font-size:40px; 
+}
+a:link{
+
+    text-decoration:none;
+
+}
+a:visited {
+    text-decoration:none;
+
+}
+
+a:hover {
+    text-decoration:none;
+ 
+}
+
+a:active {
+    text-decoration:none;
+    
+}
+#header{
+    background-color: #29323c;
+    color:rgb(153, 255, 187);
+    height:70px;
+}
+#text1{
+    position: absolute;
+    left:3%;
+    color:rgb(153, 255, 187);
+}
+#home{
+    position: absolute;
+    left:65%;
+    color:rgb(153, 255, 187);
+}
+#register{
+    position: absolute;
+    left:75%;
+    color:rgb(153, 255, 187);
+}
+#sign_in{
+    position: absolute;
+    left:87%;
+    color:rgb(153, 255, 187);
+}
+
+#sekil1
+{
+    position:absolute;
+    left :5%;
+    top: 30%;
+
+    
+}
+#text
+{
+    position: absolute;
+    left: 20%;
+    top: 25%;
+   
+    font-size: xx-large;
+   
+}
+#form
+{
+    position: absolute;
+    left: 25%;
+    top: 53%;
+
+}
+#sekil2
+{
+ position: absolute;
+ left: 45%;
+ top: 30%;
+}
+#text2
+{
+    position: absolute;
+    left: 60%;
+    top: 25%;
+    font-size: xx-large;
+}
+#proex{
+    font-size:50px;
+    position: absolute;
+    left:40%;
+}
+#form1
+{
+    position: absolute;
+    left: 65%;
+    top: 53%;
+}
+#sekil3
+{
+    position: absolute;
+    left: 7%;
+    top: 70%;
+
+}
+#text3
+{
+    position: absolute;
+    left: 20%;
+    top:65% ;
+    font-size: xx-large;
+}
+#form2
+{
+    position: absolute;
+    left: 25%;
+    top:93%;
+}
+#sekil4
+{
+    position: absolute;
+    left: 47%;
+    top: 70%;
+}
+#text4
+{
+    position: absolute;
+    left: 60%;
+    top: 65%;
+    font-size: xx-large;
+}
+#form3
+{
+    position: absolute;
+    left: 65%;
+    top: 93%;
+}
+#sekil5
+{
+    position: absolute;
+    left: 5%;
+    top: 110%;
+}
+#text5
+{
+    position: absolute;
+    left: 20%;
+    top: 107%;
+    font-size: xx-large;
+}
+#form4
+{
+    position: absolute;
+    left: 25%;
+    top: 134%;
+}
+#sekil6
+{
+    position: absolute;
+    left: 47%;
+    top: 110%;
+}
+#text6
+{
+    position: absolute;
+    left: 60%;
+    top: 105%;
+    font-size: xx-large;
+}
+#form5
+{
+    position: absolute;
+    left: 65%;
+    top: 134%;
+}
+
+#end{
+    color:rgb(153, 255, 187);
+    background-color:#29323c;
+    font-size:24px;
+    text-align: center;
+    margin-top:1050px;
+}
+.img1{
+    width:100px;
+    height: 100px;
+    position: absolute;
+    left: 20%;
+    top: 145%;
+}
+
+
+
+
+

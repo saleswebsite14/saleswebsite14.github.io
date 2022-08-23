@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in</title>
+    <link href="sign_in.css" rel="stylesheet">
+</head>
+<body>
+    
+    <p id="sekil1">
+        <img src="download.png">
+        </p>
+        <p >
+            <form id="form">
+                <i id="txtmsg1"></i><br>
+                <input id="name" placeholder="Your username:" type="text" ><br><br><br>
+                <!-- oninput="wrongusername()" -->
+                <i id="txtmsg"></i><br>
+                <input id="pass" placeholder="Your password:" type="password"><br><br><br><br>
+                
+                <input id="log" value="Log in" onclick="signin()" type="button">
+                <!-- <input id="lo" value="Lo" onclick="readconsolemsg()" type="button"> -->
+               
+            
+                </form>
+        </p>
+        
+        <p class="back">
+            <a id="home"  href="home.html">
+                Home
+            </a>
+            <a id="about" href="home.html">
+               About
+            </a>
+            <a id="Products" href="product.html">
+                 Products
+            </a>
+            <a id="contact" href="home.html">
+                Contact
+    
+            </a>
+        </p>
+   
+    <img src="3.jpg" width="100%" height="100%">
+
+    <script src="API.js"></script>
+    
+    <script>
+        function signin(){
+            let usname = document.getElementById("name").value;
+            let pass = document.getElementById("pass").value;
+        
+            
+       const store = new SteinStore(
+       "https://api.steinhq.com/v1/storages/628dea4b4906bb0537479349"
+  );
+
+ /* data = [{
+      name: john,
+      pass: 1234
+  }]
+*/
+  
+//  
+
+    if(usname != "" && pass != ""){
+        store.read("register", { search: { name: usname } }  ).then(data => {
+            let result = data[0].name;
+            let res = data[0].password;
+
+            if(res == pass){ 
+                alert("you can entered succesfully!");
+                window.open("home.html","_self");
+            }
+            else if(result == ""){
+                alert("fhf");
+            }
+            else{
+                document.getElementById("txtmsg").innerHTML = "Wrong password!";
+            }
+        });
+    }
+    if(usname == ""){
+        document.getElementById("txtmsg1").innerHTML = "Please,write everybox";
+    }
+    if(pass == ""){
+        document.getElementById("txtmsg").innerHTML = "Please,write everybox";
+    }
+
+    // if(usname != result){
+    //     alert("no");
+    // }
+    // else{
+    //     console.log("yes");
+    // }
+}
+
+//   function readconsolemsg(){
+//     var oldConsole = {};
+//     oldConsole.log = console.log;
+//     console.log(oldConsole);
+//   }
+
+// function wrongusername(){
+//     let usernm = document.getElementById("name").value;
+
+//     const store = new SteinStore(
+//     "https://api.steinhq.com/v1/storages/628dea4b4906bb0537479349"
+//   );
+//   store.read("register", { search: { name: usernm } }  ).then(data => {
+//     // var usercase = true;
+//     // console.log(usercase);
+//     var dt = data[0].name;
+//     if(usernm == dt){
+//         console.log("fj");
+//     }
+//     else{
+//         console.log("no");
+//     }
+// }
+
+     
+
+        
+    </script>
+    <div id="end">© 2022 Sales website. All rights reserved. Cookie policy, Privacy and Terms.</div>
+</body>
+</html>

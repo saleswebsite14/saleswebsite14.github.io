@@ -1,0 +1,219 @@
+/*@font-face {
+    font-family:"";
+    src:url() ;
+
+}*/
+
+#text1{
+    font-size:35px;
+}
+ 
+a{
+    text-decoration: none;
+    color:#111111;
+    font-size:40px;
+}
+a:link{
+
+    text-decoration:none;
+    color:#111111;
+}
+a:visited {
+    text-decoration:none;
+    color:#111111;
+}
+
+a:hover {
+    text-decoration:none;
+    color:#111111;
+}
+
+a:active {
+    text-decoration:none;
+    color:#111111;
+}
+
+#home{
+    position:absolute;
+    left:18%;
+}
+#about{
+    position:absolute;
+    left:30%;
+}
+#product{
+    position:absolute;
+    left:42%;
+}
+#contact{
+    position:absolute;
+    left:54%;
+}
+#comments{
+    position: absolute;
+    left:66%;
+}
+#register{
+    position:absolute;
+    left:79%;
+}
+#sign_in{
+    position:absolute;
+    left:90%;
+}
+
+.main{
+    background-color: #29323c;
+    color:rgb(153, 255, 187);
+}
+#text2{
+    font-size:60px;
+    margin-top:100px;
+    text-align: center;
+}
+#text3{
+    font-size:50px;
+    margin-top:120px;
+    text-align: center;
+}
+#text4{
+    font-size:45px;
+    margin-top:140px;
+    margin-bottom:100px;
+    text-align: center;
+}
+.button1{
+    background-color:rgb(65, 155, 65);
+    width: 200px;
+    height: 50px;
+    font-size:30px;
+    margin-left:45%;
+    margin-bottom:100px;
+}
+#main2{
+    margin-left: 15%;
+}
+#about2{
+    font-size:100px;
+    margin-top:100px;
+}
+#text5{
+    font-size:60px;
+}
+.main3{
+    margin-top:300px;
+    margin-left: 15%;
+    font-size:30px;
+}
+#text6{
+    font-size:100px;
+}
+.main4{
+    margin-top:500px;
+    margin-left: 15%;
+    font-size:30px;
+}
+#text7{
+    font-size:100px;
+}
+.comments{
+    /* margin-top: 800px; */
+    position: absolute;
+    top:300%;
+    left:60%;
+    /* margin-bottom:10px; */
+    /* margin-left:820px; */
+
+    /* background-color: #29323c; */
+    color:rgb(153, 255, 187);
+    font-size:30px;
+    text-align: center;
+    /* border:1px solid-rgb(153, 255, 187); */
+    width:40%;
+    /* height:700px; */
+}
+#text8{
+    text-align: center;
+    font-size:50px;
+}
+
+#input1{
+    height:30px;
+    width:300px;
+}
+#input2{
+    height:30px;
+    width:300px;
+}
+#input3{
+    height:70px;
+    width:300px;
+}
+#input4{
+    height:40px;
+    width:300px;
+    background-color:rgb(153, 255, 187);
+}
+.contact{
+    
+    margin-top: 500px;
+    background-color:#29323c;
+    color:rgb(153, 255, 187);
+    font-size:50px;
+}
+#map{
+    margin-top: 0px;
+    font-size: 50px;
+    position: absolute;
+    left:40%;
+    /* margin-left:300px; */
+    color:rgb(153, 255, 187);
+}
+#map1{
+    margin-top: 0px;
+    font-size: 24px;
+    margin-left:300px;
+    color:rgb(153, 255, 187);
+}
+.map{
+    /* margin-top:0px; */
+    font-size: 15px;
+    /* margin-left:270px; */
+    position: absolute;
+    top:320%;
+    left:18%;
+}
+#text9{
+    margin-left: 5%;
+}
+#instagram{
+    margin-left:5%;
+    font-size:24px
+}
+#facebook{
+    font-size:24px;
+    margin-left:5%;
+}
+#twitter{
+    font-size:24px;
+    margin-left:5%;
+}
+#linkedin{
+    font-size:24px;
+    margin-left:5%;
+}
+#phone{
+    font-size:24px;
+    margin-left:5%;
+}
+#e-mail{
+    font-size:24px;
+    margin-left:5%;
+}
+#end{
+    color:rgb(153, 255, 187);
+    font-size:24px;
+    text-align: center;
+    margin-bottom:0px;
+}
+

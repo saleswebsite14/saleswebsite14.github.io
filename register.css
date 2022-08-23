@@ -1,0 +1,89 @@
+a{
+    text-decoration:none;
+}
+a:link{
+
+    text-decoration:none;
+    color:#111111;
+}
+a:visited {
+    text-decoration:none;
+    color:#111111;
+}
+
+a:hover {
+    text-decoration:none;
+    color:#111111;
+}
+
+a:active {
+    text-decoration:none;
+    color:#111111;
+}
+#sekil1
+{
+  position: absolute;
+  right: 45%;
+  top: 15%;
+}
+#form
+{
+    position: absolute;
+    right: 44%;
+    top: 55%;
+
+}
+.back
+{
+  background-color:#29323c;
+  color: rgb(153, 255, 187);
+  /* margin-top: 0%; */
+  height:70px;
+  
+}
+#home
+{
+    font-size: xx-large;
+    color: rgb(153, 255, 187);
+    margin-left: 10%;
+    
+}
+#about
+{
+    font-size: xx-large;
+    color:rgb(153, 255, 187) ;
+    position: absolute;
+    right: 30%;
+}
+#Products
+{
+    font-size: xx-large;
+    color: rgb(153, 255, 187);
+    position: absolute;
+    right: 20%;
+}
+#contact
+{
+    font-size: xx-large;
+    color: rgb(153, 255, 187);
+    position: absolute;
+    right: 10%;
+}
+
+#end{
+    color:rgb(153, 255, 187);
+    background-color:#29323c;
+    font-size:24px;
+    text-align: center;
+    margin-bottom:0px;
+}
+#button
+{
+    position: absolute;
+    left: 40%;
+    top: 87%;
+}
+#msg1 , #msg2 , #msg3 , #msg4 , #msg5{
+    color:red;
+    font-size:10px;
+}
