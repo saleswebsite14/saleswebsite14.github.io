@@ -1,11 +1,6 @@
-// imgdown
 
-  
 
 // addpanel
-
-
-
 
 
 function visibility(){

@@ -7,8 +7,16 @@
     <title>Shopping basket</title>
     <link rel="stylesheet" href="css/stylesheet.css">
     <script src="js/proAPI.js"></script>
+    <script>
+      function buy(){
+        alert("this button don't set still!");
+      }
+      function Delete(){
+        alert("this button don't set still!");
+      }
+    </script>
 </head>
-<body>
+<body> 
     <div id="magaza" class="main">
         <h1 style="font-weight: bold;"><a href="home.html" id="home">Home   </a> <a id="pro" href="productapp.html">Products</a> </h1> 
         <br><br>
@@ -22,7 +30,8 @@
                   <h2 class="card_title">{{name}}</h2>
                   <p class="card_text">{{about}}</p>
                   <p class="card_text_for_price">{{price}}</p>
-                  <a href="{{}}"><button class="btn card_btn">Buy</button>
+                  <button class="btn card_btn" onclick="buy()">Buy</button>
+                  <button class="btn card_btn" onclick="Delete()">Delete from shoping basket</button>
                 </div>
               </div>
             </div>
