@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel</title>
+    <script>
+        alert("Welcome to addPanel");
+        while(true){
+            var username = prompt("Please,enter your username");
+            var password = prompt("Please,enter your password");
+            
+
+            if(username == "admin" && password == "admin"){
+                var us_pa_case = true;
+                alert("You can enter succesfully!");
+                break;
+            }
+            else if(username != "" || password != ""){
+                var us_pa_case = false;
+                alert("Wrong username or password!");
+                var username = prompt("Please,enter your username");
+                var password = prompt("Please,enter your password");
+            }
+        }
+
+
+function visibility(){
+    const btn = document.getElementById('btn');
+
+    btn.addEventListener('click', () => {
+        const form = document.getElementById('form');
+
+        if (form.style.display === 'block') { 
+           form.style.display = 'none';
+        } else {
+           form.style.display = 'block';
+        }
+    });
+
+    btn.addEventListener('click', () => {
+        const form = document.getElementById('form1');
+
+        if (form1.style.display === 'block') { 
+           form1.style.display = 'none';
+        } else {
+           form1.style.display = 'block';
+        }
+    });
+
+    btn.addEventListener('click', () => {
+        const form2 = document.getElementById('form2');
+
+        if (form2.style.display === 'block') { 
+           form2.style.display = 'none';
+        } else {
+           form2.style.display = 'block';
+        }
+    });
+
+}
+
+    </script>
+    <style>
+    *{
+        background-color: rgb(115, 59, 59);
+        text-align: center;
+    }
+    h1{
+        color: white;
+    }
+    input{
+        background-color: white;
+        width: 300px;
+        height: 40px;
+        border-radius: 8px;
+    }
+    #button{
+        background-color: rgb(192, 192, 65);
+    }
+    .card{
+        width: 140px;
+        background-color: white;
+        height: 40px;
+        border-radius: 8px;
+    }
+    .cards{
+        width: 96.5px;
+        background-color: white;
+        height: 40px;
+        border-radius: 8px;
+    }
+    .cardsitem{
+        width: 200px;
+        color: white;
+        cursor: pointer;
+        margin-left: 630px;
+    }
+    .defolt{
+        display: none;
+        /* visibility: hidden; */
+    }
+    </style>
+</head>
+<body>
+<div class="main">
+    <h1>Add product system</h1><br><br><br>
+    <input id="pname" type="text" placeholder="your product name:"><br><br><br>
+    <!-- <input id="pid" type="text" placeholder="your product id number:"><br><br><br> -->
+    <input id="pabout" type="text" placeholder="about of your product"><br><br><br>
+    <input id="pprice" type="text" placeholder="price of your product"><br><br><br>
+    <input id="plink" type="text" placeholder="link of your product"><br><br><br>
+
+    <!-- <input type="file" placeholder="your product"> -->
+   
+    <input id="button" type="button" value="add product" onclick="add()">
+    </div>
+<br><br>
+    <div class="container">
+        <h1>Modify product system</h1><br><br><br>
+       
+        <input id="m_pname" type="text" placeholder="your product name:"> <br><br>
+        <form class="defolt" id="form"><input id="n_m_pname" type="text" placeholder="new product name:"><br><br><br></form>
+
+        <input id="m_pabout" type="text" placeholder="about of your product"> <br><br>
+        <form class="defolt" id="form1"><input id="n_m_pabout" type="text" placeholder="new about of product"><br><br><br></form>
+
+        <input id="m_pprice" type="text" placeholder="price of your product"> <br><br>
+        <form class="defolt" id="form2"><input id="n_m_pprice" type="text" placeholder="new price of product"></form>
+
+        <p class="cardsitem" onclick="visibility()" id="btn">If you want modify,you have to double click !</p>
+        
+        <input class="cards" id="button" type="button" value="Search" onclick="search()">
+        <input class="cards" id="button" type="button" value="Delete" onclick="delete_product()">
+        <input class="cards" id="button" type="button" value="Modify all" onclick="modify_product_all()">
+
+        <!-- <input class="cards" id="button" type="button" value="Modify name" onclick="modify_product_name()"> -->
+        <!-- <input class="cards" id="button" type="button" value="Modify about" onclick="modify_product_about()"> -->
+        <!-- <input class="cards" id="button" type="button" value="Modify price" onclick="modify_product_price()"> -->
+    </div>
+    <br><br><br><br><br><br>
+</body>
+<script src="API.js"></script>
+
+<script src="app.js"></script>
+</html>
