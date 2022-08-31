@@ -5,6 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panel</title>
+    <script>
+        alert("Welcome to addPanel");
+        while(true){
+            var username = prompt("Please,enter your username");
+            var password = prompt("Please,enter your password");
+            
+
+            if(username == "admin" && password == "admin"){
+                var us_pa_case = true;
+                alert("You can enter succesfully!");
+                break;
+            }
+            else if(username != "" || password != ""){
+                var us_pa_case = false;
+                alert("Wrong username or password!");
+                var username = prompt("Please,enter your username");
+                var password = prompt("Please,enter your password");
+            }
+        }
+    </script>
     <script src="jsAPI.js"></script>
     <script src="js/app.js"></script>
     <style rel="stylesheet" href="css/panel.css"></style>

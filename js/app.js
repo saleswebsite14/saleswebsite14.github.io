@@ -5,24 +5,7 @@
 // addpanel
 
 
-alert("Welcome to addPanel");
-        while(true){
-            var username = prompt("Please,enter your username");
-            var password = prompt("Please,enter your password");
-            
 
-            if(username == "admin" && password == "admin"){
-                var us_pa_case = true;
-                alert("You can enter succesfully!");
-                break;
-            }
-            else if(username != "" || password != ""){
-                var us_pa_case = false;
-                alert("Wrong username or password!");
-                var username = prompt("Please,enter your username");
-                var password = prompt("Please,enter your password");
-            }
-        }
 
 
 function visibility(){
