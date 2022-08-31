@@ -4,6 +4,64 @@
 
 // addpanel
 
+
+alert("Welcome to addPanel");
+        while(true){
+            var username = prompt("Please,enter your username");
+            var password = prompt("Please,enter your password");
+            
+
+            if(username == "admin" && password == "admin"){
+                var us_pa_case = true;
+                alert("You can enter succesfully!");
+                break;
+            }
+            else if(username != "" || password != ""){
+                var us_pa_case = false;
+                alert("Wrong username or password!");
+                var username = prompt("Please,enter your username");
+                var password = prompt("Please,enter your password");
+            }
+        }
+
+
+function visibility(){
+    const btn = document.getElementById('btn');
+
+    btn.addEventListener('click', () => {
+        const form = document.getElementById('form');
+
+        if (form.style.display === 'block') { 
+           form.style.display = 'none';
+        } else {
+           form.style.display = 'block';
+        }
+    });
+
+    btn.addEventListener('click', () => {
+        const form = document.getElementById('form1');
+
+        if (form1.style.display === 'block') { 
+           form1.style.display = 'none';
+        } else {
+           form1.style.display = 'block';
+        }
+    });
+
+    btn.addEventListener('click', () => {
+        const form2 = document.getElementById('form2');
+
+        if (form2.style.display === 'block') { 
+           form2.style.display = 'none';
+        } else {
+           form2.style.display = 'block';
+        }
+    });
+
+}
+
+
+
 function add(){
   var pname = document.getElementById("pname").value;
   // var pid = document.getElementById("pid").value;
