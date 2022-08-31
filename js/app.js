@@ -1,8 +1,6 @@
 // imgdown
 
-    const store = new SteinStore(
-    "https://api.steinhq.com/v1/storages/6303152abc148508ba88c27b"
-  )
+  
 
 // addpanel
 
@@ -166,4 +164,3 @@ store
 }
 
   
-  // https://docs.google.com/spreadsheets/d/1ZQdFgGmJmySuxv3WrWeT8brMYOLsT8HmGmxZqPb29RI/edit#gid=0/

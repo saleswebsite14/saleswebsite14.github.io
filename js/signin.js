@@ -20,7 +20,7 @@ pass: 1234
            
             if(res == pass && result == usname){ 
                 alert("you can entered succesfully!");
-                // window.open("home.html","_self");
+                window.open("home.html","_self");
             }
             if(res != pass && result == usname){
                 document.getElementById("txtmsg").innerHTML = "Wrong password";
