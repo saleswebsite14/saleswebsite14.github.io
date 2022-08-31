@@ -28,16 +28,20 @@ a:active {
 }
 #form
 {
-    position: absolute;
-    right: 44%;
-    top: 55%;
-
+    margin-left:580px;
+    margin-top: 300px;
+    /* position: absolute; */
+    /* left: 580px; */
+    /* top: 300px; */
+}
+.main{
+    margin-left:580px;
 }
 .back
 {
   background-color:#29323c;
   color: rgb(153, 255, 187);
-  /* margin-top: 0%; */
+  margin-top: 0px;
   height:70px;
   
 }
@@ -79,11 +83,33 @@ a:active {
 }
 #button
 {
-    position: absolute;
-    left: 40%;
     top: 87%;
+    border-radius: 14px;
+    background-color: rgb(79, 116, 79);
+    width: 200px;
+    height: 30px;
 }
 #msg1 , #msg2 , #msg3 , #msg4 , #msg5{
     color:red;
     font-size:10px;
+} 
+
+.card{
+    height: 30px;
+    width: 200px;
+    border-radius: 14px;
+    position: absolute;
+    left: 580px;
+    /* top: 300px; */
+    /* margin-left: 580px; */
+}
+.cards{
+    height: 30px;
+    width: 200px;
+    border-radius: 14px;
+}
+.carditem{
+    height: 35px;
+    width: 75px;
+    border-radius: 14px;
 }

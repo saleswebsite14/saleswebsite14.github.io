@@ -1,0 +1,168 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+/* Design */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #ecf9ff;
+
+}
+
+
+.main{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: #ff4949;
+  margin-top: 10px;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid purple;
+  background-color: white;
+  
+}
+
+.btn:hover {
+  background-color: purple;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;  
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 400px;
+  border: 1px solid red;
+}
+
+.card_content {
+  padding: 1rem;
+  background-color: #4d7f30;
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+  
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400; 
+}
+.card_text_for_price {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400; 
+}
+#end{
+  color:rgb(153, 255, 187);
+  background-color:#29323c;
+  font-size:24px;
+  text-align: center;
+  margin-top:500px;
+}
+
+a{
+  text-decoration: none;
+  font-size:40px; 
+}
+a:link{
+
+  text-decoration:none;
+
+}
+a:visited {
+  text-decoration:none;
+
+}
+
+a:hover {
+  text-decoration:none;
+
+}
+
+a:active {
+  text-decoration:none;
+  
+}
+#home{
+  font-size: 28px;
+  margin-right: 10%;
+  color: black;
+}
+#pro{
+  font-size: 27px;
+  color: black;
+}
+#icona{
+  width: 50px;
+  height: 30px;
+  position: relative;
+  left: 5%;
+  cursor: pointer;
+}
+.head{
+  text-align: center;
+}

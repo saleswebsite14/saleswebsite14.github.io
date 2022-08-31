@@ -1,0 +1,294 @@
+/*@font-face {
+    font-family:"";
+    src:url() ;
+
+}*/
+
+#text1{
+    font-size:35px;
+}
+ 
+a{
+    text-decoration: none;
+    color:#111111;
+    font-size:40px;
+}
+a:link{
+
+    text-decoration:none;
+    color:#111111;
+}
+a:visited {
+    text-decoration:none;
+    color:#111111;
+}
+
+a:hover {
+    text-decoration:none;
+    color:#111111;
+}
+
+a:active {
+    text-decoration:none;
+    color:#111111;
+}
+
+#home{
+    position:absolute;
+    left:18%;
+}
+#about{
+    position:absolute;
+    left:30%;
+}
+#product{
+    position:absolute;
+    left:42%;
+}
+#contact{
+    position:absolute;
+    left:54%;
+}
+#comments{
+    position: absolute;
+    left:66%;
+}
+#register{
+    position:absolute;
+    left:79%;
+}
+#sign_in{
+    position:absolute;
+    left:90%;
+}
+
+.main{
+    background-color: #29323c;
+    color:rgb(153, 255, 187);
+}
+#text2{
+    font-size:60px;
+    margin-top:100px;
+    text-align: center;
+}
+#text3{
+    font-size:50px;
+    margin-top:120px;
+    text-align: center;
+}
+#text4{
+    font-size:45px;
+    margin-top:140px;
+    margin-bottom:100px;
+    text-align: center;
+}
+.button1{
+    background-color:rgb(65, 155, 65);
+    width: 200px;
+    height: 50px;
+    font-size:30px;
+    margin-left:45%;
+    margin-bottom:100px;
+}
+#main2{
+    margin-left: 15%;
+}
+#about2{
+    font-size:100px;
+    margin-top:100px;
+}
+#text5{
+    font-size:60px;
+}
+.main3{
+    margin-top:300px;
+    margin-left: 15%;
+    font-size:30px;
+}
+#text6{
+    font-size:100px;
+}
+.main4{
+    margin-top:500px;
+    margin-left: 15%;
+    font-size:30px;
+}
+#text7{
+    font-size:100px;
+}
+/* ------------------------------------ */
+#input1{
+    height: 30px;
+    position: relative;
+    left: 10%;
+}
+#input2{
+    height: 30px;
+    position: relative;
+    left: 10%;
+}
+#input3{
+    height: 50px;
+    position: relative;
+    left: 10%;
+}
+#input4{
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+
+#inputtext{
+    position: relative;
+    left: 10%;
+}
+
+/* ------------------------------------
+ */
+#instagram{
+    margin-left:5%;
+    /* position: absolute; */
+    font-size:24px;
+}
+#facebook{
+    font-size:24px;
+    margin-left:5%;
+}
+#twitter{
+    font-size:24px;
+    margin-left:5%;
+}
+#linkedin{
+    font-size:24px;
+    margin-left:5%;
+}
+#phone{
+    font-size:24px;
+    margin-left:5%;
+}
+#e-mail{
+    font-size:24px;
+    margin-left:5%;
+}
+#end{
+    color:rgb(153, 255, 187);
+    font-size:24px;
+    width: 100%;
+    background-color: #29323c;
+    position: relative;
+    top: 340%;
+    left: 25%;
+}
+.end{
+    background-color: #29323c;
+}
+
+
+/* ------------------------------ */
+
+
+.temp{
+    background-color:#29323c;
+    color:rgb(153, 255, 187);
+    width: 100%;
+    height: 700px;
+}
+
+/* ------------------------------- */
+
+.contact{
+    font-size:30px;
+    /* border: 4px solid red; */
+    width: 30%;
+    height: 80%;
+
+    position: absolute;
+    left: 2%;
+}
+
+.map{
+    font-size: 10px;
+    /* border: 4px solid red; */
+    width: 32%;
+    height: 80%;
+
+    position: absolute;
+    left: 33.5%;
+}
+.comments{
+    font-size:30px;
+    /* border: 4px solid red; */
+    width: 30%;
+    height: 80%;
+
+    position: absolute;
+    left: 67%;
+}  
+
+/* --------------------------- */
+
+#text9{   
+    font-size:50px;
+    /* border: 2px solid red; */
+    width: 50%;
+    height: auto;
+
+    position: absolute;
+    left: 25%;
+}
+#map{
+    font-size: 50px;
+    /* border: 2px solid red; */
+    width: 50%;
+    height: auto;
+
+    position: absolute;
+    left: 25%;
+}
+#text8{
+    font-size: 50px;
+    /* border: 2px solid red; */
+    width: 50%;
+    height: auto;
+
+    position: absolute;
+    left: 25%;
+}
+
+/* ------------------------------ */
+
+.container1{
+    /* border: 2px solid red; */
+    width: 50%;
+    height: 70%;
+    /* margin-top: 155px; */
+    margin-top: 32%;
+    position: absolute;
+    left: 25%;
+}
+.container2{
+    /* border: 2px solid red; */
+    width: 50%;
+    height: 70%;
+    margin-top: 30%;
+    position: absolute; 
+    left: 25%;
+}
+.container3{
+    /* border: 2px solid red; */
+    width: 50%;
+    height: 70%;
+    margin-top: 30%;
+    position: relative; 
+    left: 25%;
+}
+
+/* --------------------------------- */
+#map1{
+  
+}
+
+
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping basket</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="js/proAPI.js"></script>
+</head>
+<body>
+    <div id="magaza" class="main">
+        <h1 style="font-weight: bold;"><a href="home.html" id="home">Home   </a> <a id="pro" href="#">Products</a> </h1> 
+        <br><br>
+        <h2 class="head">Shopping basket</h2>
+        <br><br>
+        <div class="cards" data-stein-url="https://api.steinhq.com/v1/storages/630db53abc148508ba8a6c62/basket">
+          <div class="cards_item">
+            <div class="card">
+              <div  class="card_image"><img style="height: 400px;z-index: 1; border-radius: 20px;" src="{{foto}}"></div>
+                <div class="card_content">
+                  <h2 class="card_title">{{name}}</h2>
+                  <p class="card_text">{{about}}</p>
+                  <p class="card_text_for_price">{{price}}</p>
+                  <a href="{{}}"><button class="btn card_btn">Buy</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="end">© 2022 Sales website. All rights reserved. Cookie policy, Privacy and Terms.</div>
+
+</body>
+</html>

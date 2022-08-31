@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="js/proAPI.js"></script>
+</head>
+<body>
+      <div id="magaza" class="main">
+        <h1 style="font-weight: bold;"><a href="home.html" id="home">Home   </a>   <a href="shopping_basket.html"> <img src="foto/sebet.png" id="icona"></a></h1> 
+        
+        <div class="cards" data-stein-url="https://api.steinhq.com/v1/storages/6303152abc148508ba88c27b/sekil">
+          <div class="cards_item">
+            <div class="card">
+              <div  class="card_image"><img class="image" style="height: 400px;z-index: 1; border-radius: 20px;" src="{{foto}}"></div>
+                <div class="card_content">
+                  <h2 class="card_title">{{name}}</h2>
+                  <p class="card_text">{{about}}</p>
+                  <p class="card_text_for_price">{{price}}</p>
+                  <button class="btn card_btn" onclick="addbasketproduct()">Add to shopping basket</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="end">© 2022 Sales website. All rights reserved. Cookie policy, Privacy and Terms.</div>
+
+</body>
+<script src="js/addproduct.js"></script>
+<script src="js/API.js"></script>
+<script src="js/app.js"></script>
+
+</html>
