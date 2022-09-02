@@ -1,12 +1,13 @@
 function addbasketproduct(){
-    let name = document.getElementsByClassName("card_title").value;
-    let about = document.getElementsByClassName("card_text").value;
-    let price = document.getElementsByClassName("card_text_for_price").value;
-    let image = document.getElementsByClassName("image").value;
-    console.log(name);
-    console.log(about);
-    console.log(price);
-    console.log(image);
+    alert("this button don't set still!");
+    // let name = document.getElementsByClassName("card_title").value;
+    // let about = document.getElementsByClassName("card_text").value;
+    // let price = document.getElementsByClassName("card_text_for_price").value;
+    // let image = document.getElementsByClassName("image").value;
+    // console.log(name);
+    // console.log(about);
+    // console.log(price);
+    // console.log(image);
 
 
     // const store = new SteinStore(
