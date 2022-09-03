@@ -104,6 +104,7 @@ function search(){
 );
 
 store.read("sekil", { search: { name: pname , about: pabout , price: pprice} }).then(data => {
+  console.log(data);
   alert("Product found!");
 });
 }
@@ -119,6 +120,7 @@ function delete_product(){
 );
 
 store.delete("sekil", { search: { name: pname , about: pabout , price: pprice} }).then(data => {
+  console.log(data);
   alert("Product is deleted!");
 });
 }
