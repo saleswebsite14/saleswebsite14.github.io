@@ -46,12 +46,34 @@ function add(){
   var pabout = document.getElementById("pabout").value;
   var pprice = document.getElementById("pprice").value;
   var plink = document.getElementById("plink").value;
+  
+            var url = document.getElementById("plink").value;
+            var Urldrive = "https://drive.google.com/file/d/";
+            var Urldrivelength = Urldrive.length;
+            var newUrlWithoutHead = url.slice(Urldrivelength,url.length);
+            var Urlhead = "http://drive.google.com/uc?export=view&id=";
+            var newUrlWithEnd = Urlhead.concat(newUrlWithoutHead);
 
-  var link = plink.slice(32,plink.length);
-  var text = "http://drive.google.com/uc?export=view&id=";
-  var inf = text.concat(link);
-  inf = inf.slice(0,inf.length-17);
-  console.log(inf);
+            var computer = newUrlWithEnd.includes("/view?usp=sharing");//17
+            var phone = newUrlWithEnd.includes("/view?usp=drivesdk");//18
+
+            var computerUrlLength = newUrlWithEnd.length-17;
+            var phoneUrlLength = newUrlWithEnd.length-18;
+            
+            var computerNewUrl = newUrlWithEnd.slice(0,computerUrlLength);
+            var phoneNewUrl = newUrlWithEnd.slice(0,phoneUrlLength);
+
+            if(computer){
+                var inf = computerNewUrl;
+            }
+            else if(phone){
+                var inf = phoneNewUrl;
+            }
+            else{
+                alert("Url isn't true!");
+            }
+
+             
 
   const store = new SteinStore(
       "https://api.steinhq.com/v1/storages/6303152abc148508ba88c27b"
